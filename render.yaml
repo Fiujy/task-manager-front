@@ -1,0 +1,9 @@
+services:
+  - name: task-manager-frontend
+    type: static
+    env: static
+    buildCommand: npm run build
+    publishPath: dist
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://task-manager-backend.onrender.com
